@@ -1,0 +1,25 @@
+# Install Python and pip
+sudo apt-get update
+sudo apt install python3-pip
+
+# to install java
+sudo apt-get install default-jre
+
+# To clear the screen
+clear
+
+# Install required packages
+sudo pip install pandas
+sudo pip install pyspark
+sudo pip install numpy
+sudo pip install s3fs
+sudo pip install apache-airflow
+
+# To start airflow
+airflow standalone
+
+# update load_examples = False in airflow.cfg
+sudo nano airflow.cfg
+
+# create dags folder in airflow folder to have dag files there
+mkdir dags

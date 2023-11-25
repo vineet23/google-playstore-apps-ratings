@@ -1,0 +1,25 @@
+Programming Language - spark and python
+
+AWS -
+AWS S3
+AWS IAM
+AWS Glue
+AWS EC2
+Apache Airflow
+Amazon Athena
+Amazon QuickSight
+
+S3 -> Amazon EC2 (Airflow)/Amazon Managed Workflows -> S3 -> AWS Glue (Crawler) -> Amazon Athena -> Amazon Quick Sight
+
+S3 -> Amazon EC2 (Airflow)/Amazon Managed Workflows -> S3 -> Amazon EC2 (Airflow)/Amazon Managed Workflows -> AWS Redshift (DW)/AWS RDS -> Amazon Quick Sight
+
+Data Model Diagram - https://lucid.app/documents#/documents?folder_id=home
+
+More info about dataset can be found here:
+https://www.kaggle.com/datasets/lava18/google-play-store-apps
+
+In sentiment analysis, polarity and subjectivity are two outputs that can be generated from a sentence. 
+Polarity
+Also known as orientation, polarity is the emotion expressed in a sentence. It can be positive, negative, or neutral. Polarity is a float value between [-1.0 to 1.0]. -1 indicates negative sentiment, 0 indicates neutral, and +1 indicates positive sentiment.
+Subjectivity
+Subjectivity is how opinionated or factual a text is. It refers to how subjective or objective a piece of text is. Subjectivity is a float value between [0.0 to 1.0]. 0.0 is very objective and 1.0 is very subjective.

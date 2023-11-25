@@ -1,0 +1,8 @@
+1. Upload the raw data to S3 bucket
+2. Created a EC2 instance and added security rule to expose 8080 port over http for airflow access, also created new role in IAM with S3FullAcess and EC2FullAccess
+3. Run the airflow in EC2 instance and ingested the data from S3 storage and loaded it back in S3 storage after transforming it
+5. Created Database in Amazon Glue - Data Catalog to store the data catalog of tarnsformed data
+4. Created Amazon Glue Crawler to crawl the S3 bucket of transformed data and create a data catalog
+5. Used Amazon Athena to view data from the data catalog created
+6. Created a analysis sql view with required fields in Athena
+7. Used Athena analysis view created in Amazon QuickSight to generate the dashboard

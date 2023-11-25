@@ -1,0 +1,2 @@
+On seeing on the dashboard we found that the app install rates have exponentionaly increased over the years e.g in 2017 we had 4.84B installations but by 2018 it became 16.33B
+Most installed apps belong to the family category 5.4B while only 134M apps installation belong to Comics category

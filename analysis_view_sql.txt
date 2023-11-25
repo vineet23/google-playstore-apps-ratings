@@ -1,0 +1,7 @@
+CREATE VIEW AppsAnalysisView as
+SELECT da.app, da."current ver", da."android ver", da.size, da."content rating", da."last updated",
+dc.category, dd.day, dd.month, dd.quarter, dd.year, fa.installs, fa.reviews, fa.ratings
+FROM fact_apps fa
+INNER JOIN dim_app da ON fa."app id" = da."app id"
+INNER JOIN dim_category dc ON fa."category id" = dc."category id"
+INNER JOIN dim_date dd ON fa."last update date id" = dd."date id"
